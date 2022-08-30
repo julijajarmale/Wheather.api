@@ -5,17 +5,17 @@ function GetInfo() {
   cityName.innerHTML = `${newName}`;
 
   fetch(
-    `https://api.openweathermap.org/data/2.5/forecast?q=${newName}&appid=377444acbbfeceaf37fc429cabfefe2e`
+    `https://api.openweathermap.org/data/2.5/forecast?q=${newName}&appid=377444acbbfeceaf37fc429cabfefe2e&units=metric`
   )
     .then((response) => response.json())
     .then((data) => {
       for (i = 0; i < 5; i++) {
         document.getElementById(`day${i + 1}Min`).innerHTML =
-          "Min:" + Number(data.list[i].main.temp_min.toFixed(1));
+          "Min:" + Number(data.list[i].main.temp_min).toFixed(1) + "°C";
       }
       for (i = 0; i < 5; i++) {
         document.getElementById(`day${i + 1}Max`).innerHTML =
-          "Max:" + Number(data.list[i].main.temp_max.toFixed(1));
+          "Max:" + Number(data.list[i].main.temp_max).toFixed(1) + "°C";
       }
       for (i = 0; i < 5; i++) {
         document.getElementById(`img${i + 1}`).src =

@@ -43,7 +43,7 @@ button {
   transform: translate(-50%, -50%);
   height: 240px;
   width: 1200px;
-  border: 5px solid rgba(97, 95, 95, 0.829);
+  border: 5px solid rgba(253, 245, 245, 0.829);
   border-radius: 10px;
 }
 
@@ -54,17 +54,16 @@ color: black;
   height: 200px;
   width: 190px;
   margin: 20px;
-  border: 5px solid rgba(97, 95, 95, 0.829);
+  border: 5px solid rgba(19, 18, 18, 0.829);
   border-radius: 10px;
 }
 
-.image {
-  height: 140px;
-  width: 100%;
-}
+
+
 .imgClass {
-  height: 140px;
-  width: 100%;
+  height: auto;
+  width: 50%;
+  margin-left: 40px;
 }
 .weather {
   margin: 5px;
