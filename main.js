@@ -25,7 +25,7 @@ function GetInfo() {
       }
     })
 
-    .catch((err) => alert("Something went wrong"));
+    .catch((err) => alert("Please, type a valid city name"));
 }
 
 function DefaultScreen() {
